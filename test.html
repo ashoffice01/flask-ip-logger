@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF with HTTP Call</title>
+    <style>
+        #pdf-container {
+            width: 100%;
+            height: 600px;
+        }
+    </style>
+    <script>
+        function openURL() {
+            fetch('https://www.youtube.com/watch?v=ebiNs1rrOeY');
+        }
+    </script>
+</head>
+<body onload="openURL()">
+    <div id="pdf-container">
+        <embed src="path/to/your/clickable_pdf.pdf" width="100%" height="100%">
+    </div>
+</body>
+</html>

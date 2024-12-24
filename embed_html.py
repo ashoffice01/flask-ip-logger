@@ -40,5 +40,5 @@ if __name__ == "__main__":
     </body>
     </html>
     ''' % base64.b64encode(open(image_path, 'rb').read()).decode()
-    output_path = 'panda_image.html'
+    output_path = 'panda_image.png'
     embed_html(image_path, html_content, output_path)
